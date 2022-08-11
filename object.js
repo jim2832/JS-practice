@@ -21,3 +21,29 @@ person.print_name()
 //js中所有東西都可以視為物件
 var phrase = "hello"
 document.write(phrase.length) //物件phrase的length屬性
+document.write("<br>")
+
+//物件練習
+var movie = {
+    title:"蜘蛛人3",
+    producer:"Adam",
+    duration:"114",
+    actor:[
+        //在物件中再創造物件
+        {
+            name:"Tobey Maguire",
+            age:36,
+            is_male:true
+        },
+        {
+            name:"Leon",
+            age:20,
+            is_male:true
+        }
+    ]
+}
+
+document.write(movie.title);
+document.write("<br>")
+document.write(movie.actor[0].name); //movie物件中的陣列
+document.write("<br>")
