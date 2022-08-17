@@ -7,9 +7,11 @@ var number = [
     [4, 7, 1]
 ];
 
+//nested for loop
 for(var i=0; i<number.length; i++){
     for(var j=0; j<number[i].length; j++){
         document.write(number[i][j]);
-        document.write("<br/>");
+        document.write(" ");
     }
+    document.write("<br/>");
 }
