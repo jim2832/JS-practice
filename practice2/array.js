@@ -31,3 +31,19 @@ for (var i = 0; i < array3.length; i++) {
 array3.forEach(function (element) {
     console.log(element);
 });
+
+// find (找到第一個符合條件的元素)
+let result = array3.find(function (element) {
+    return element === "Mary";
+});
+console.log(result);
+
+// prototype (在原型上新增方法)
+Array.prototype.sayHello = function () {
+    console.log("Hello");
+}
+
+// reduce (將陣列中的元素累加)
+let sum = array.reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue;
+});

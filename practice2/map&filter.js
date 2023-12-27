@@ -9,7 +9,7 @@ array = array.map(function(element){
 array = array.map(element => element ** 2); // 將陣列中的每個元素都平方
 console.log(array);
 
-// filter
+// filter (用來過濾特定條件的元素)
 array = array.filter(function(element){
     return element > 10; // 將陣列中大於10的元素取出
 });
